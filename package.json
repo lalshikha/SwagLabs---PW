@@ -1,15 +1,21 @@
 {
   "name": "swaglabs---pw",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright test automation framework for SwagLabs",
   "main": "index.js",
   "scripts": {
-    "test:allure": "npx playwright test && allure generate ./allure-results --clean && allure open",
-    "test:dev": "cross-env TEST_ENV=DEV BASE_URL=https://saucedemo.com playwright test",
-    "test:staging": "cross-env TEST_ENV=STAGING BASE_URL=https://staging.saucedemo.com playwright test",
-    "test:prod": "cross-env TEST_ENV=PROD BASE_URL=https://www.saucedemo.com playwright test"
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:dev": "cross-env TEST_ENV=DEV BASE_URL=https://www.saucedemo.com playwright test",
+    "test:staging": "cross-env TEST_ENV=STAGING BASE_URL=https://www.saucedemo.com playwright test",
+    "test:prod": "cross-env TEST_ENV=PROD BASE_URL=https://www.saucedemo.com playwright test",
+    "test:allure": "playwright test && allure generate ./allure-results --clean && allure open",
+    "report": "playwright show-report",
+    "allure:serve": "allure serve ./allure-results"
   },
-  "keywords": [],
+  "keywords": ["playwright", "automation", "testing"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",

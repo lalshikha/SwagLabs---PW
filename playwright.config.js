@@ -1,5 +1,6 @@
 // playwright.config.js
 const { defineConfig, devices } = require('@playwright/test');
+require('dotenv').config();
 
 module.exports = defineConfig({
   testDir: './tests',
@@ -11,7 +12,7 @@ module.exports = defineConfig({
   fullyParallel: true,        // Run tests in parallel
   forbidOnly: !!process.env.CI,  // Fail on .only in CI
   retries: process.env.CI ? 2 : 0,  // Retry on CI
-  workers: process.env.CI ? 1 : undefined,  // Parallel workers
+  workers: process.env.CI ? 2 : undefined,  // Parallel workers
 
   // Reporter configuration
   reporter: [
@@ -44,6 +45,7 @@ module.exports = defineConfig({
   // Shared settings for all projects
   use: {
     baseURL: process.env.BASE_URL,
+    testIdAttribute: 'data-test',  
 
     // Browser context options
     screenshot: 'only-on-failure',
