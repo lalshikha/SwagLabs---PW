@@ -50,6 +50,18 @@
       [
         "list",
         null
+      ],
+      [
+        "C:\\SLG\\SLG BREAK\\PW\\SwagLabs - PW\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "resultsDir": "allure-results",
+          "environmentInfo": {
+            "Environment": "DEV",
+            "Base URL": "https://saucedemo.com",
+            "Node Version": "v24.11.1",
+            "Execution Time": "16/2/2026, 11:23:21 pm"
+          }
+        }
       ]
     ],
     "reportSlowTests": {
@@ -88,12 +100,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6526,
+                  "duration": 2369,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-16T16:34:12.169Z",
+                  "startTime": "2026-02-16T17:53:25.094Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -122,12 +134,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 6939,
+                  "duration": 2667,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-16T16:34:12.175Z",
+                  "startTime": "2026-02-16T17:53:25.110Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -171,12 +183,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 7138,
+                      "duration": 2965,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-16T16:34:12.231Z",
+                      "startTime": "2026-02-16T17:53:25.172Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -205,12 +217,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 7305,
+                      "duration": 3203,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-16T16:34:12.324Z",
+                      "startTime": "2026-02-16T17:53:25.239Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -239,12 +251,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2397,
+                      "duration": 2049,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-16T16:34:20.579Z",
+                      "startTime": "2026-02-16T17:53:27.940Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -290,12 +302,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2188,
+                      "duration": 1758,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-16T16:34:20.951Z",
+                      "startTime": "2026-02-16T17:53:28.416Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -307,108 +319,6 @@
               "file": "login.spec.js",
               "line": 11,
               "column": 3
-            },
-            {
-              "title": "login fails with locked user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2028,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-16T16:34:21.091Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-8e02331fbb451b2b1f91",
-              "file": "login.spec.js",
-              "line": 27,
-              "column": 3
-            },
-            {
-              "title": "login fails with invalid credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1969,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-16T16:34:21.263Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-9dce30d6c274560c3211",
-              "file": "login.spec.js",
-              "line": 39,
-              "column": 3
-            },
-            {
-              "title": "login requires username and password",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1333,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-16T16:34:23.045Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-eda71ea3e20a6d6b7d56",
-              "file": "login.spec.js",
-              "line": 50,
-              "column": 3
             }
           ]
         }
@@ -417,9 +327,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-16T16:34:08.300Z",
-    "duration": 16287.238000000001,
-    "expected": 9,
+    "startTime": "2026-02-16T17:53:21.323Z",
+    "duration": 9181.09,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

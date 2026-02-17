@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:allure": "npx playwright test && allure generate ./allure-results --clean && allure open",
+    "test:dev": "cross-env TEST_ENV=DEV BASE_URL=https://saucedemo.com playwright test",
+    "test:staging": "cross-env TEST_ENV=STAGING BASE_URL=https://staging.saucedemo.com playwright test",
+    "test:prod": "cross-env TEST_ENV=PROD BASE_URL=https://www.saucedemo.com playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.2.3"
+    "@types/node": "^25.2.3",
+    "allure-playwright": "^3.4.5",
+    "dotenv": "^17.3.1"
   }
 }
